@@ -2,6 +2,6 @@
 <select class="form-control" name="value">
     <option><?=t('Select a Group')?></option>
     <?php foreach($group_list->getResults() as $group): ?>
-        <option value="<?=$group->getGroupID()?>"><?=$group->getGroupPath()?></option>
+        <option value="<?=$group->getGroupID()?>" <?php if($group->getGroupID()==$value)echo 'selected'?>><?=$group->getGroupPath()?></option>
     <?php endforeach; ?>
 </select>
