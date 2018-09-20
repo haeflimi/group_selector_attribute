@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+    <attributetypes>
+        <attributetype handle="group_selector" name="Group Selector" package="group_selector_attribute">
+            <categories>
+                <category handle="collection"/>
+                <category handle="user"/>
+                <category handle="file"/>
+                <category handle="site"/>
+                <category handle="event"/>
+            </categories>
+        </attributetype>
+    </attributetypes>
+</concrete5-cif>

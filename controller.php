@@ -2,6 +2,7 @@
 namespace Concrete\Package\GroupSelectorAttribute;
 
 use Package,
+    Concrete\Core\Backup\ContentImporter,
     Core,
     Config,
     Events;
@@ -30,14 +31,12 @@ class Controller extends Package
     public function install()
     {
         $pkg = parent::install();
+        $ci = new ContentImporter();
+        $ci->importContentFile($pkg->getPackagePath() . '/install.xml');
     }
 
     public function upgrade()
     {
         parent::upgrade();
-    }
-
-    public function uninstall(){
-
     }
 }
