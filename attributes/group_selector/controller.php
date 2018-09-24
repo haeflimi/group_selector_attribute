@@ -85,4 +85,5 @@ class Controller extends AttributeTypeController
             $avn = $akn->addChild('value', $group->getGroupID());
         }
     }
+
 }
